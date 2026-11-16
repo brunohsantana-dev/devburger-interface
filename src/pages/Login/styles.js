@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import BackgroundLogin from '../../assets/login-page/leftwallpaper.jpg'
 import BackgroundRight from '../../assets/login-page/rightwallpaper.png'
 
-export const Link = styled.span``
+export const Link = styled.span`
+color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+`
 
 export const Container = styled.div`
 display: flex;
@@ -62,6 +66,7 @@ export const Title = styled.h2`
 
     span {
         color: #9758a6;
+        font-family: 'Road Rage', sans-serif;
     }
 `
 
@@ -95,5 +100,3 @@ export const InputContainer = styled.div`
 
     }
 `
-
-export const Button = styled.button``
