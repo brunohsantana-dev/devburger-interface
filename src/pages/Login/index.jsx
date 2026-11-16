@@ -17,8 +17,14 @@ import {
 export function Login() {
   const schema = yup
     .object({
-      email: yup.string().email().required(),
-      password: yup.string().required(),
+      email: yup
+        .string()
+        .email('Digite um email valido')
+        .required('Email obrigatorio'),
+      password: yup
+        .string()
+        .min(6, 'A senha deve contem pelo menos 6 caracteres')
+        .required('Senha obrigatoria'),
     })
     .required()
 
@@ -45,11 +51,13 @@ export function Login() {
           <InputContainer>
             <label htmlFor="email">Email</label>
             <input id="email" type="email" {...register('email')} />
+            <p>{errors?.email?.message}</p>
           </InputContainer>
 
           <InputContainer>
             <label htmlFor="password">Senha</label>
             <input id="password" type="password" {...register('password')} />
+            <p>{errors?.password?.message}</p>
           </InputContainer>
 
           <Button type="submit">Entrar</Button>
