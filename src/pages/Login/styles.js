@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import BackgroundLogin from '../../assets/login-page/leftwallpaper.jpg'
 import BackgroundRight from '../../assets/login-page/rightwallpaper.png'
 
+export const Link = styled.span``
+
 export const Container = styled.div`
 display: flex;
 height: 100vh;
@@ -93,7 +95,5 @@ export const InputContainer = styled.div`
 
     }
 `
-
-export const Link = styled.p``
 
 export const Button = styled.button``
