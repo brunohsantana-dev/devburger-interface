@@ -1,27 +1,81 @@
-# React + Vite
+# DevBurger — Frontend
 
-Frontend do DevBurger com React, Vite e Biome.
+A burger ordering application built with React as part of my Full Stack development journey at DevClub.
 
-Currently, two official plugins are available:
+The goal is to build a complete experience where customers can browse products, place orders, and interact with a restaurant's online menu, supported by a Node.js backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I'm developing the project step by step, learning how the frontend and backend work together.
 
-## React Compiler
+## Current progress
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The frontend is still in its early stages.
 
-## Lint e formatação
+So far, I've implemented:
 
-- `pnpm check`: verifica lint, formatação e organização dos imports.
-- `pnpm lint`: verifica somente lint.
-- `pnpm format`: aplica formatação.
-- `pnpm check:write`: aplica formatação, organização de imports e correções seguras.
-- `pnpm dev`: inicia o desenvolvimento.
-- `pnpm build`: gera o build de produção.
+- Initial login page layout.
+- Reusable button component.
+- Global styles, typography, and styled-components.
+- React project setup with Vite.
+- Code formatting and linting with Biome.
 
-No VS Code, instale a extensão **Biome** (`biomejs.biome`). As configurações
-locais habilitam a formatação ao salvar e desabilitam ESLint e Prettier neste
-projeto. Se necessário, use **Disable (Workspace)** nas extensões ESLint e
-Prettier e execute **Developer: Reload Window**. Nenhuma configuração global é
-necessária. Não use `--unsafe` para correções automáticas.
+The login screen is currently a visual interface. Authentication and other interactive features will be connected in upcoming stages.
+
+## Tech stack
+
+- **React** — User interface and components.
+- **JavaScript** — Application logic.
+- **Vite** — Development environment.
+- **styled-components** — Component styling.
+- **Biome** — Code quality and formatting.
+- **pnpm** — Package management.
+
+## Running locally
+
+Make sure Node.js and pnpm are installed.
+
+```bash
+pnpm install
+pnpm dev
+```
+
+Open the local address displayed in the terminal.
+
+To check the code:
+
+```bash
+pnpm check
+```
+
+To generate a production build:
+
+```bash
+pnpm build
+```
+
+## What's next?
+
+As I move through the course, I'll continue building the registration flow, authentication, product catalog, shopping cart, ordering experience, and administrative interface.
+
+These features are part of the development roadmap and are not all implemented yet.
+
+## From DevBurger to BS Burger
+
+This project started as a guided learning experience at DevClub.
+
+My long-term goal is to evolve it into **BS Burger**, with its own visual identity, improved user experience, and refinements based on what I've learned throughout development.
+
+For now, the focus is understanding the code, building the application, and documenting the progress.
+
+A more complete technical README will come once the Full Stack project is finished.
+
+---
+
+### Em português
+
+O DevBurger é um projeto Full Stack desenvolvido durante minha formação na DevClub.
+
+Este repositório contém o frontend em React, ainda em desenvolvimento. Estou construindo a aplicação por etapas, começando pela tela de login e avançando para autenticação, catálogo, carrinho, pedidos e área administrativa.
+
+Ao concluir o projeto, pretendo evoluir a aplicação para o **BS Burger**, com identidade visual própria e melhorias técnicas.
+
+**Desenvolvido por Bruno Santana.**
