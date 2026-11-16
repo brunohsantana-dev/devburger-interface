@@ -18,8 +18,8 @@ export function Login() {
       </LeftContainer>
       <RightContainer>
         <Title>
-          Ola, seja bem vindo ao <span>Dev Burger!</span> Acesse com o seu{' '}
-          <span>Login e Senha</span>.
+          Ola, seja bem vindo ao <span>Dev Burger!</span>
+          <br /> Acesse com o seu <span>Login e Senha</span>.
         </Title>
         <Form>
           <InputContainer>
@@ -32,8 +32,9 @@ export function Login() {
             <input id="password" type="password" />
           </InputContainer>
 
-          <Link>Esqueci minha senha</Link>
           <Button>Entrar</Button>
+
+          <Link>Esqueci minha senha</Link>
         </Form>
         <Link>Nao possui conta? Clique aqui</Link>
       </RightContainer>

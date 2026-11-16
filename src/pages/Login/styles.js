@@ -1,24 +1,99 @@
 import styled from 'styled-components'
 
 import BackgroundLogin from '../../assets/login-page/leftwallpaper.jpg'
+import BackgroundRight from '../../assets/login-page/rightwallpaper.png'
 
 export const Container = styled.div`
 display: flex;
 height: 100vh;
 width: 100vw;
-background: url('${BackgroundLogin}');
 `
 
-export const LeftContainer = styled.div``
+export const LeftContainer = styled.div`
+background: url('${BackgroundLogin}');
+background-size: cover;
+background-position: center;
 
-export const RightContainer = styled.div``
+height: 100%;
+width: 100%;
+max-width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
 
-export const Title = styled.h2``
+img {
 
-export const Form = styled.form``
+    width: 80%;
+}
+`
 
-export const InputContainer = styled.div``
+export const RightContainer = styled.div`
 
-export const Link = styled.a``
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100%;
+width: 100%;
+max-width: 50%;
+
+background: url('${BackgroundRight}');
+background-color: #1e1e1e;
+
+p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+
+    a{
+        text-decoration: underline;
+    }
+}
+
+
+`
+
+export const Title = styled.h2`
+    font-family: 'Road Rage', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+
+    span {
+        color: #9758a6;
+    }
+`
+
+export const Form = styled.form`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+`
+
+export const InputContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+    input {
+        width: 100%;
+        border: none;
+        height: 52px;
+        border-radius: 5px;
+        padding: 0 16px;
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: 600;
+        color: #ffffff;
+
+    }
+`
+
+export const Link = styled.p``
 
 export const Button = styled.button``
